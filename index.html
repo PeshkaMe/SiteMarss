@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Exploration | Проєкт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MARS<span>04</span></div>
+        <ul>
+            <li><a href="#" onclick="location.reload()">Головна</a></li>
+            <li><a href="#">Місії</a></li>
+            <li><a href="#">Галерея</a></li>
+        </ul>
+    </nav>
+
+    <main id="home-screen" class="hero">
+        <div class="content">
+            <h1>ЧЕРВОНА ПЛАНЕТА</h1>
+            <p>Марс — четверта планета від Сонця та друга за розміром найменша планета в Сонячній системі.</p>
+            <button id="exploreBtn">ДІЗНАТИСЯ БІЛЬШЕ</button>
+        </div>
+        <div class="mars-container">
+            <div class="mars-sphere"></div>
+        </div>
+    </main>
+
+    <section id="info-screen" class="hidden">
+        <div class="info-layout">
+            <div class="info-card">
+                <h2>Про Марс</h2>
+                <p>Марс — це пустельна та крижана планета. Вона отримала свою назву на честь римського бога війни через свій червоний колір.</p>
+                
+                <ul class="stats-list">
+                    <li><strong>Відстань від Сонця:</strong> 227.9 млн км</li>
+                    <li><strong>Тривалість дня:</strong> 24 год 37 хв</li>
+                    <li><strong>Температура:</strong> від -153°C до +20°C</li>
+                </ul>
+
+                <button class="back-btn" onclick="location.reload()">НАЗАД</button>
+            </div>
+            <div class="info-graphic">
+    <div class="fact-container">
+        <p id="factText">Натисніть кнопку нижче, щоб отримати цікавий факт.</p>
+        <button class="update-btn" onclick="getFact()">ОНОВИТИ ФАКТ</button>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <script src="skript.js"></script>
+</body>
+</html>
